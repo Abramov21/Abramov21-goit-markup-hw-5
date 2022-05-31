@@ -28,7 +28,7 @@
 
         <nav class="header-nav">
           <ul class="nav-list list">
-            <li class="nav-item">
+            <li class="nav-item item-band">
               <a class="nav-link link current" href="./index.html">Студия</a>
             </li>
             <li class="nav-item"><a class="nav-link link" href="./portfolio.html">Портфолио</a></li>
@@ -61,7 +61,17 @@
       <section class="hero">
         <div class="conteiner hero-conteiner">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-          <button class="bth" type="button">Заказать услугу</button>
+          <button class="bth" type="button" data-modal-open>Заказать услугу</button>
+
+          <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+              <button class="close-backdrop-bth" data-modal-close>
+                <svg width="30" height="30">
+                  <use href="./images/close-black.svg#icon-close-bth"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -123,12 +133,15 @@
           <ul class="about-list list grid">
             <li class="about-item grid-item">
               <img class="about-image" src="images/cod.jpg" alt="Разработка продукта" width="370" />
+              <p class="about-text">Десктопные приложения</p>
             </li>
             <li class="about-item grid-item">
               <img class="about-image" src="./images/phone.jpg" alt="Тех. задание" width="370" />
+              <p class="about-text">Мобильные приложения</p>
             </li>
             <li class="about-item grid-item">
               <img class="about-image" src="./images/design.jpg" alt="Стиль" width="370" />
+              <p class="about-text">Дизайнерские решения</p>
             </li>
           </ul>
         </div>
@@ -398,5 +411,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
