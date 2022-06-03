@@ -192,7 +192,7 @@ ul{
   padding-top: 32px;
   padding-bottom: 32px;
 
-  transition-property: color, fill, background-color;
+  transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -523,7 +523,7 @@ padding-bottom: 94px;
   border-radius: var(--bordered);
   outline: transparent;
 
-  transition-property: fill, border;
+  transition-property: border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -535,7 +535,7 @@ padding-bottom: 94px;
 
 .clients-svg{
   fill: #AFB1B8;
-  transition-property: fill, border;
+  transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -716,7 +716,7 @@ padding-bottom: 0px;
   margin-bottom: 0;
   box-shadow: none;
 
-  transition-property: background-color, transform, box-shadow;
+  transition-property: background-color, color, box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -731,7 +731,7 @@ padding-bottom: 0px;
 
 .works-items .item-link{
   display: block;
-  transition-property: background-color, transform, box-shadow;
+  transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
